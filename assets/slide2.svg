@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#38bdf8"/>
+  <text x="100" y="200" font-size="92" fill="#fff" font-family="Poppins">Produk Premium</text>
+  <rect x="90" y="260" width="520" height="320" rx="30" fill="#fff" opacity=".2"/>
+  <rect x="640" y="260" width="520" height="320" rx="30" fill="#fff" opacity=".2"/>
+</svg>

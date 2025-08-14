@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthy Pets — Petshop Kekinian</title>
+  <meta name="description" content="Healthy Pets: Petshop kekinian milik Deswita. Produk hewan lengkap, grooming, dan perawatan penuh cinta."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Floating shapes background -->
+  <ul class="bubbles" aria-hidden="true">
+    <li></li><li></li><li></li><li></li><li></li>
+    <li></li><li></li><li></li><li></li><li></li>
+  </ul>
+
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Healthy Pets home">
+        <img src="assets/logo.svg" alt="Logo Healthy Pets"/>
+        <span>Healthy <b>Pets</b></span>
+      </a>
+      <nav class="nav">
+        <a href="#produk">Produk</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak" class="btn copper">Kontak</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="tag">Petshop milik <b>Deswita</b></p>
+        <h1>Sehat, Ceria, <span class="copper-text">Penuh Cinta</span>.</h1>
+        <p class="lead">Healthy Pets menghadirkan produk premium, grooming profesional, dan konsultasi ringan agar anabulmu selalu bahagia.</p>
+        <div class="cta">
+          <a href="#produk" class="btn sky">Belanja Sekarang</a>
+          <a href="#layanan" class="btn ghost">Lihat Layanan</a>
+        </div>
+        <ul class="usp">
+          <li>⚡ Pengiriman cepat</li>
+          <li>🦴 Produk lengkap</li>
+          <li>💬 Chat CS ramah</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <img class="floating" src="assets/hero-pets.svg" alt="Ilustrasi hewan lucu"/>
+        <div class="hero-badge">
+          <span>100%</span>
+          <small>Love & Care</small>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <section class="section" id="produk">
+    <div class="container">
+      <h2 class="section-title">Produk Pilihan</h2>
+      <p class="section-desc">Kurasi produk favorit untuk kucing & anjing—pakan, snack, vitamin, dan aksesori.</p>
+      <div class="grid products">
+        <!-- Card 1 -->
+        <article class="card reveal">
+          <img src="assets/prod-food.svg" alt="Dry food premium"/>
+          <div class="card-body">
+            <h3>Dry Food Premium</h3>
+            <p>Formulasi seimbang untuk bulu berkilau dan pencernaan sehat.</p>
+            <div class="price">Rp120.000</div>
+            <button class="btn copper add-to-cart" data-name="Dry Food Premium" data-price="120000">Tambah</button>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card reveal">
+          <img src="assets/prod-snack.svg" alt="Snack sehat"/>
+          <div class="card-body">
+            <h3>Snack Sehat</h3>
+            <p>Tanpa pewarna & rendah lemak. Cocok untuk reward harian.</p>
+            <div class="price">Rp35.000</div>
+            <button class="btn copper add-to-cart" data-name="Snack Sehat" data-price="35000">Tambah</button>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card reveal">
+          <img src="assets/prod-vit.svg" alt="Vitamin & suplemen"/>
+          <div class="card-body">
+            <h3>Vitamin & Suplemen</h3>
+            <p>Dukung imunitas dan energi si anabul.</p>
+            <div class="price">Rp50.000</div>
+            <button class="btn copper add-to-cart" data-name="Vitamin & Suplemen" data-price="50000">Tambah</button>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card reveal">
+          <img src="assets/prod-access.svg" alt="Aksesori lucu"/>
+          <div class="card-body">
+            <h3>Aksesori Lucu</h3>
+            <p>Kalung, bandana, dan mainan interaktif.</p>
+            <div class="price">Rp25.000</div>
+            <button class="btn copper add-to-cart" data-name="Aksesori Lucu" data-price="25000">Tambah</button>
+          </div>
+        </article>
+      </div>
+      <div class="cart-bar" aria-live="polite">
+        <div class="cart-info"><b>Keranjang:</b> <span id="cart-count">0</span> item • <span id="cart-total">Rp0</span></div>
+        <button class="btn sky" id="checkout">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="layanan">
+    <div class="container">
+      <h2 class="section-title">Layanan</h2>
+      <div class="grid services">
+        <div class="service reveal">
+          <div class="icon">🛁</div>
+          <h3>Grooming</h3>
+          <p>Mandi, trimming, nail care—aman dan nyaman.</p>
+        </div>
+        <div class="service reveal">
+          <div class="icon">✂️</div>
+          <h3>Styling</h3>
+          <p>Potongan rapi sesuai ras dan karakter.</p>
+        </div>
+        <div class="service reveal">
+          <div class="icon">📦</div>
+          <h3>Delivery</h3>
+          <p>Antar cepat area kota kamu.</p>
+        </div>
+        <div class="service reveal">
+          <div class="icon">💬</div>
+          <h3>Konsultasi Ringan</h3>
+          <p>Tanya produk & perawatan via chat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="galeri">
+    <div class="container">
+      <h2 class="section-title">Galeri</h2>
+      <div class="slider" role="region" aria-label="Slider foto Healthy Pets">
+        <button class="slider-btn prev" aria-label="Sebelumnya">‹</button>
+        <div class="slides">
+          <div class="slide current"><img src="assets/slide1.svg" alt="Anjing lucu di studio"/></div>
+          <div class="slide"><img src="assets/slide2.svg" alt="Kucing menguap imut"/></div>
+          <div class="slide"><img src="assets/slide3.svg" alt="Peralatan grooming bersih"/></div>
+        </div>
+        <button class="slider-btn next" aria-label="Berikutnya">›</button>
+        <div class="dots" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="testimoni">
+    <div class="container">
+      <h2 class="section-title">Apa Kata Mereka</h2>
+      <div class="grid testimonials">
+        <blockquote class="quote reveal">
+          <p>“Pelayanan ramah, produk lengkap. Anabulku makin sehat!”</p>
+          <cite>— Nisa, Cat Mom</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“Groomingnya detail banget. Wangi dan rapi.”</p>
+          <cite>— Raka, Dog Dad</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <p>“CS responsif, bantu pilih pakan yang cocok.”</p>
+          <cite>— Dita, Pet Lover</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="kontak">
+    <div class="container">
+      <h2 class="section-title">Kontak</h2>
+      <div class="contact-wrap">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Terima kasih! Pesanmu terkirim.'); this.reset();">
+          <div class="two">
+            <input type="text" placeholder="Nama"/>
+            <input type="email" placeholder="Email"/>
+          </div>
+          <textarea rows="4" placeholder="Pesan"></textarea>
+          <button class="btn copper" type="submit">Kirim Pesan</button>
+        </form>
+        <div class="contact-info">
+          <h3>Healthy Pets</h3>
+          <p>Petshop milik Deswita — produk lengkap & layanan penuh cinta.</p>
+          <ul>
+            <li>📍 Lokasi: Kota Anda</li>
+            <li>⏰ Buka: 09.00–20.00</li>
+            <li>☎️ Telp/WA: 08xx-xxxx-xxxx</li>
+            <li>📸 IG: @healthypets.id</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Healthy Pets — by Deswita. All rights reserved.</p>
+      <a href="#home" class="to-top">↑ Ke atas</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
